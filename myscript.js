@@ -8,6 +8,17 @@
 
 // 👇 هنا function عرف الدالة او
 
+function driving(age){
+
+    if(age >= 18){
+        console.log(`🚘😍 مبروك سوف تحصل على الليسن`);
+    } else {
+        console.log(`😢 للاسف عمرك لا يسمح`);
+    }
+}
+
+driving(11);
+
 
 
 // لا تنسى أن تنادي الدالة
@@ -22,6 +33,14 @@
 
 // 👇 هنا array عرف المصفوفة او
 
+let iceCream = ["manago", "strawberry", "vanilla"];
+
+
+    for (let test of iceCream) {
+        console.log(test);
+        
+    }
+
 
 
 
@@ -30,5 +49,33 @@
 // بحيث عند مناداة الدالة تطبع القائمة myIceCream بإسم function عرف دالة او
 // for loop عرف مصفوفة أخرى تحتوي على أفلامك الكرتون المفضلة بالنسبة لك وقم بطباعة الأفلام بإستخدام
 
+let iceCream1 = ["mango", "strawberry", "vanilla"];
+
+function myIceCream(iceCream1){
+    
+    for (let flavour of iceCream1 ) {
+        
+        console.log(`My Fav IceCream Flavours are ${iceCream1}`);
+        console.log(flavour);
+        
+    }
+
+}
+
+myIceCream(iceCream1);
+
+let movies = ["harry potter", "home alone", "the 100", "the walking dead"];
+
+for (let test1 of movies) {
+    console.log(test1);
+}
+
 // --------------------------------- 🔥 بونص ------------------------------------
 // while loop اطبع احد المصفوفات بإستخدام
+
+ let i1 = 0;
+ while (i1 < movies.length) {
+     console.log(movies[i1]);
+     i1++
+
+ }
